@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>TaskFlow</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>TaskFlow</h1>
+
+<form id="taskForm">
+  <input type="text" id="title" placeholder="Task title" required>
+  <input type="text" id="description" placeholder="Description">
+  
+  <select id="priority">
+    <option>Low</option>
+    <option>Medium</option>
+    <option>High</option>
+  </select>
+
+  <input type="date" id="dueDate">
+  
+  <button type="submit">Add Task</button>
+</form>
+
+<select id="filter">
+  <option value="all">All</option>
+  <option value="Low">Low</option>
+  <option value="Medium">Medium</option>
+  <option value="High">High</option>
+</select>
+
+<ul id="taskList"></ul>
+
+<script src="app.js"></script>
+</body>
+</html>
